@@ -16,7 +16,10 @@ vim.opt.updatetime = 250
 vim.highlight.on_yank()
 
 -- scrolloff
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 5
+
+-- line ruler
+vim.opt.colorcolumn = "90"
 
 local o = vim.o
 
