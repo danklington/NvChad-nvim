@@ -10,6 +10,7 @@ return {
         "css-lsp",
         "prettier",
         "pyright",
+        "ruff",
       },
     },
   },
