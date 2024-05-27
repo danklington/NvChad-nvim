@@ -18,10 +18,17 @@ vim.opt.scrolloff = 5
 -- line ruler
 vim.opt.colorcolumn = "90"
 
-local o = vim.o
-
 -- cursorline
-o.cursorlineopt ='both'
+vim.opt.cursorlineopt ='both'
+
+-- highlight on yank
+vim.api.nvim_create_autocmd("TextYankPost", {
+	desc = "Highlight when yanking (copying) text",
+	group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
+	callback = function()
+		vim.highlight.on_yank()
+	end,
+})
 
 -- Use win32yank.exe to link yank to Windows clipboard
 vim.g.clipboard = {
