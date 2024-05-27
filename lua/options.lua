@@ -12,9 +12,6 @@ vim.opt.smartcase = true
 -- decrease update time
 vim.opt.updatetime = 250
 
--- highlight on yank
-vim.highlight.on_yank()
-
 -- scrolloff
 vim.opt.scrolloff = 5
 
