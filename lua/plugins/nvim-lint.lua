@@ -16,7 +16,8 @@ return {
       {
         "BufEnter",
         "BufWritePost",
-        "InsertLeave"
+        "InsertEnter",
+        "InsertLeave",
       },
       {
       group = lint_augroup,
