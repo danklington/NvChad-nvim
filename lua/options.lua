@@ -16,7 +16,7 @@ vim.opt.updatetime = 250
 vim.opt.scrolloff = 5
 
 -- line ruler
-vim.opt.colorcolumn = "90"
+vim.opt.colorcolumn = "80"
 
 -- cursorline
 vim.opt.cursorlineopt ='both'
